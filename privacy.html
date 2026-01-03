@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
-<body style="font-family: sans-serif; padding: 40px; max-width: 800px; margin: auto;">
+<head>
+    <title>MacroLens Privacy Policy</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; padding: 20px; color: #333; }
+        h1 { color: #222; }
+        h2 { color: #444; margin-top: 30px; }
+        li { margin-bottom: 10px; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
     <h1>Privacy Policy for MacroLens</h1>
-    <p><strong>Last Updated:</strong> January 2026</p>
-    <p>MacroLens ("we") does not store your personal data. Here is how we handle your information:</p>
-    <ul>
-        <li><strong>Food Data:</strong> Your food logs are stored directly in your own personal Google Sheet. We do not have access to this data after it is written.</li>
-        <li><strong>Photos:</strong> Photos uploaded for analysis are processed by OpenAI's API and are subject to OpenAI's data retention policies. We do not save your photos on our servers.</li>
-        <li><strong>Authentication:</strong> We use Google OAuth solely to write data to your spreadsheet. We do not access your contacts, emails, or other Drive files.</li>
-    </ul>
+    <p><strong>Effective Date:</strong> January 3, 2026</p>
+
+    <div class="section">
+        <h2>1. Introduction</h2>
+        <p>MacroLens ("we," "our," or "us") is an AI-powered nutrition tracker that operates within ChatGPT. We are committed to protecting your privacy and ensuring you have full control over your data.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Google User Data We Access</h2>
+        <p>To provide our services, MacroLens requests access to the following Google user data (Scopes):</p>
+        <ul>
+            <li><strong>See, edit, create, and delete all your Google Sheets spreadsheets (<code>.../auth/spreadsheets</code>):</strong> Required to create your nutrition tracker sheet and append food logs.</li>
+            <li><strong>See, edit, create, and delete only the specific Google Drive files you use with this app (<code>.../auth/drive.file</code>):</strong> Required to ensure we can locate and manage the specific "MacroLens Tracker" file without accessing your other private files.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. How We Use Your Data</h2>
+        <p>We use the data accessed from your Google account and user inputs solely for the following purposes:</p>
+        <ul>
+            <li><strong>Logging Food:</strong> We append rows to your Google Sheet containing the food items, calories, and macronutrients you ask us to track.</li>
+            <li><strong>Retrieving History:</strong> We read the rows from your "MacroLens Tracker" sheet to display your recent eating history when you ask for a summary.</li>
+            <li><strong>Photo Analysis:</strong> Photos uploaded for analysis are processed by OpenAI's API to extract nutritional data. These photos are subject to OpenAI's data retention policies. We do not save your photos on our servers.</li>
+        </ul>
+        <p><strong>We do not use your Google Workspace data for training generalized AI models, serving advertisements, or surveillance.</strong></p>
+    </div>
+
+    <div class="section">
+        <h2>4. Data Storage and Sharing</h2>
+        <p>MacroLens is a "Bring Your Own Database" application. <strong>We do not store your personal data on our servers.</strong> Your food logs live entirely inside your personal Google Sheet.</p>
+        <p>We do not share your Google user data with third parties, except as necessary to process your specific requests via the OpenAI ChatGPT interface (as described above regarding Photos).</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Limited Use Policy</h2>
+        <p>MacroLens's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Contact Us</h2>
+        <p>If you have questions about this policy, please contact us at: macrolens.app@gmail.com</p>
+    </div>
 </body>
 </html>
