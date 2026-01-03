@@ -1,2 +1,2 @@
 # macrolens.github.io
-website
+website for the macrolens chatgpt app
